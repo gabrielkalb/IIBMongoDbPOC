@@ -1,0 +1,11 @@
+
+
+CREATE COMPUTE MODULE mainflow_ErrorResponse
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.Properties = InputRoot.Properties;
+		SET OutputRoot.JSON.Data.response.code = '1';
+		SET OutputRoot.JSON.Data.response.message = 'ERROR';
+		RETURN TRUE;
+	END;
+END MODULE;
