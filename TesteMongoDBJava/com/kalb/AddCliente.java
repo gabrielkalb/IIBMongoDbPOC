@@ -18,7 +18,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class Mainflow_AcessMongoDB extends MbJavaComputeNode {
+public class AddCliente extends MbJavaComputeNode {
 	public static MongoClient mongoClient = null;
 
 	public void evaluate(MbMessageAssembly inAssembly) throws MbException {

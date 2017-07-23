@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "IntegrationBusMongoDB",
+		"_postman_id": "de1db9dc-546d-2387-2e47-22557701a860",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7080/KalbApps/AddClientes",
+			"request": {
+				"url": "http://localhost:7080/KalbApps/AddClientes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Clientes\": [{\"nome\": \"Joao\", \"idade\": 30}, {\"nome\": \"Joao2\", \"idade\": 302}] }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
