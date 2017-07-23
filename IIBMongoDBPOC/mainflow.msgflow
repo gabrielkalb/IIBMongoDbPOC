@@ -4,9 +4,12 @@
     nsPrefix="mainflow.msgflow">
   <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
     <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
-    <translation xmi:type="utility:TranslatableString" key="mainflow" bundleName="mainflow" pluginId="TesteMongoDB"/>
-    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/TesteMongoDB/icons/full/obj16/mainflow.gif"/>
-    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/TesteMongoDB/icons/full/obj30/mainflow.gif"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.DataBase_Name" name="DataBase_Name" lowerBound="1" defaultValueLiteral="TesteDatabase">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <translation xmi:type="utility:TranslatableString" key="mainflow" bundleName="mainflow" pluginId="IIBMongoDBPOC"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/IIBMongoDBPOC/icons/full/obj16/mainflow.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/IIBMongoDBPOC/icons/full/obj30/mainflow.gif"/>
     <composition>
       <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="352,126" javaClass="com.kalb.Mainflow_AcessMongoDB">
         <translation xmi:type="utility:ConstantString" string="AcessMongoDB"/>
@@ -39,7 +42,11 @@
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_9" targetNode="FCMComposite_1_7" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_7" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
     </composition>
-    <propertyOrganizer/>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.DataBase_Name">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.DataBase_Name" bundleName="mainflow" pluginId="IIBMongoDBPOC"/>
+      </propertyDescriptor>
+    </propertyOrganizer>
     <stickyBoard/>
   </eClassifiers>
 </ecore:EPackage>
