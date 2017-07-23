@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>IIBMongoDBPOCLib</project>
+		<project>IIBMongoDBPOCJava</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
